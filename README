@@ -1,0 +1,3 @@
+The Calibration code folder is used to obtain the intrinsic parameters of the camera.
+The Epnp code is used for the extrinsic parameters of the camera.
+Both of them rely on OpneCV-3.4.

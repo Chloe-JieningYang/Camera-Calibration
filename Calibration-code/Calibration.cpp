@@ -61,5 +61,12 @@ int main()
 
     cout << "camera_matrix" << camera_matrix << endl;
     cout << "dist_coeffs" << dist_coeffs << endl;
+
+    Mat after_undistort_img;
+    undistort(img,after_undistort_img,camera_matrix,dist_coeffs);
+    imshow("image",after_undistort_img);
+    waitKey(10000);
+    destroyAllWindows();//销毁显示窗口
+	system("pause");
     return 0;
 }
